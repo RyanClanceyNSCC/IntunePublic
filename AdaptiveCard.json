@@ -1,0 +1,209 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.5",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Intune Device Onboarding",
+            "wrap": true,
+            "style": "heading",
+            "fontType": "Default",
+            "size": "ExtraLarge",
+            "weight": "Default",
+            "color": "Default",
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "${ImageURL}",
+                            "size": "Medium"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${status}",
+                            "horizontalAlignment": "Center",
+                            "style": "heading",
+                            "fontType": "Default",
+                            "size": "Medium",
+                            "color": "Default"
+                        },
+                        {
+                            "type": "Table",
+                            "columns": [
+                                {
+                                    "width": "75px"
+                                },
+                                {
+                                    "width": 1
+                                }
+                            ],
+                            "rows": [
+                                {
+                                    "type": "TableRow",
+                                    "cells": [
+                                        {
+                                            "type": "TableCell",
+                                            "items": [
+                                                {
+                                                    "type": "TextBlock",
+                                                    "text": "Model",
+                                                    "wrap": true,
+                                                    "style": "default",
+                                                    "fontType": "Default",
+                                                    "size": "Small",
+                                                    "weight": "Bolder",
+                                                    "isSubtle": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "TableCell",
+                                            "items": [
+                                                {
+                                                    "type": "TextBlock",
+                                                    "text": "${Model}",
+                                                    "wrap": true,
+                                                    "style": "default",
+                                                    "fontType": "Default",
+                                                    "size": "Small",
+                                                    "weight": "Bolder",
+                                                    "isSubtle": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TableRow",
+                                    "cells": [
+                                        {
+                                            "type": "TableCell",
+                                            "items": [
+                                                {
+                                                    "type": "TextBlock",
+                                                    "text": "Serial",
+                                                    "wrap": true,
+                                                    "style": "default",
+                                                    "fontType": "Default",
+                                                    "size": "Small",
+                                                    "weight": "Bolder",
+                                                    "isSubtle": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "TableCell",
+                                            "items": [
+                                                {
+                                                    "type": "TextBlock",
+                                                    "text": "${Serial}",
+                                                    "wrap": true,
+                                                    "style": "default",
+                                                    "fontType": "Default",
+                                                    "size": "Small",
+                                                    "weight": "Bolder",
+                                                    "isSubtle": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TableRow",
+                                    "cells": [
+                                        {
+                                            "type": "TableCell",
+                                            "items": [
+                                                {
+                                                    "type": "TextBlock",
+                                                    "text": "Group Tag",
+                                                    "wrap": true,
+                                                    "style": "default",
+                                                    "fontType": "Default",
+                                                    "size": "Small",
+                                                    "weight": "Bolder",
+                                                    "isSubtle": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "TableCell",
+                                            "items": [
+                                                {
+                                                    "type": "TextBlock",
+                                                    "text": "${Grouptag}",
+                                                    "wrap": true,
+                                                    "style": "default",
+                                                    "fontType": "Default",
+                                                    "size": "Small",
+                                                    "weight": "Bolder",
+                                                    "isSubtle": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TableRow",
+                                    "cells": [
+                                        {
+                                            "type": "TableCell",
+                                            "items": [
+                                                {
+                                                    "type": "TextBlock",
+                                                    "text": "Campus",
+                                                    "wrap": true,
+                                                    "style": "default",
+                                                    "fontType": "Default",
+                                                    "size": "Small",
+                                                    "weight": "Bolder",
+                                                    "isSubtle": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "TableCell",
+                                            "items": [
+                                                {
+                                                    "type": "TextBlock",
+                                                    "text": "${Campus} ${IPAddress}",
+                                                    "wrap": true,
+                                                    "style": "default",
+                                                    "fontType": "Default",
+                                                    "size": "Small",
+                                                    "weight": "Bolder",
+                                                    "isSubtle": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "horizontalAlignment": "Left",
+                            "firstRowAsHeaders": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "${Message}",
+            "wrap": true
+        }
+    ]
+}
